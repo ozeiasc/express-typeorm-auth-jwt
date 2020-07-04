@@ -1,6 +1,6 @@
 {
     "type": "mysql",
-    "host": "mariadb",
+    "host": "mariadb.local",
     "port": 3306,
     "username": "studies",
     "password": "studies",
