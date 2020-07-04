@@ -1,0 +1,17 @@
+{
+    "type": "mysql",
+    "host": "mariadb",
+    "port": 3306,
+    "username": "studies",
+    "password": "studies",
+    "database": "studies_typeorm_jwtauth",
+    "entities": [
+        "src/app/models/*.ts"
+    ],
+    "migrations": [
+        "src/database/migrations/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "src/database/migrations"
+    }
+}
