@@ -3,6 +3,13 @@ import { getRepository } from "typeorm";
 import User from "../models/User";
 
 class UserController {
+    async index(req: Request, res: Response) {
+        const repository = getRepository(User);
+
+        const users = repository.find({ select: ["email"] });
+
+        return res.json(users);
+    }
     async store(req: Request, res: Response) {
         const repository = getRepository(User);
 
